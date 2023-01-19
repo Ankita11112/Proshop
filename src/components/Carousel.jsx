@@ -1,5 +1,5 @@
 import Carousel from "react-bootstrap/Carousel";
-import head from "../assets/head.webp";
+import head2 from "../assets/head2.jpg";
 import laptop from "../assets/laptop.jpg";
 import phone from "../assets/phone.webp";
 
@@ -37,7 +37,7 @@ function HomeCarousel() {
         <img
           style={{ borderRadius: "10px" }}
           className="d-block w-100"
-          src={head}
+          src={head2}
           height="500px"
           alt="Third slide"
         />
