@@ -4,6 +4,8 @@ import Product from "../components/Product";
 import Loading from "../components/Loading";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchAllProducts } from "../slices/ProductSlice";
+import HomeCarousel from "../components/Carousel";
+
 
 const HomeScreen = () => {
   const dispatch = useDispatch();
@@ -19,6 +21,7 @@ const HomeScreen = () => {
   return (
     <>
       {loading && <Loading />}
+      {!loading && !error && <HomeCarousel/>}
       {error && <Alert severity="error">{error}</Alert>}
       <Grid container justifyContent={"space-around"} rowSpacing={4}>
         {products?.map((item) => (
